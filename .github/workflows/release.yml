@@ -27,7 +27,6 @@ jobs:
           files: "releases"
 
       - name: Add old release into archive
-        if: steps.check_files.outputs.files_exists == 'true'
         run: |
           export notfound=true
           while $notfound;
