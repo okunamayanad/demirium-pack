@@ -22,4 +22,6 @@ jobs:
         run: echo hello world
       
       - name: github workspace
-        run: echo $GITHUB_WORKSPACE
+        run: |
+          echo $GITHUB_WORKSPACE
+          ls $GITHUB_WORKSPACE
